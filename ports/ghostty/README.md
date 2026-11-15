@@ -2,6 +2,8 @@
 
 A warm, low-blue terminal theme for [Ghostty](https://ghostty.org). 🍂
 
+![Ghostty with Fall showing git, ls, and test output, and all 16 colors](previews/terminal.png)
+
 The ANSI palette uses Fall's colors and has no true blue: the blue slot is Fall's purple.
 
 ## Install

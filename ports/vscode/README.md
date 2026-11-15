@@ -2,6 +2,8 @@
 
 A warm, low-blue dark theme for your eyes. 🍂
 
+![Python and TypeScript side by side in VS Code with Fall](https://raw.githubusercontent.com/ThatXliner/fall/main/ports/vscode/previews/editor.png)
+
 Fall reduces blue light, keeps code clear, and still looks good. Trivial parts of code, like comments and brackets, are faded. Every language follows the same color rules: a definition keyword is green and the name it defines is purple.
 
 | Color | Hex | Used for |
