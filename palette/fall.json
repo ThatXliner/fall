@@ -1,0 +1,38 @@
+{
+  "name": "Fall",
+  "appearance": "dark",
+  "swatches": {
+    "pink": "#FF7092",
+    "orange": "#F99270",
+    "lightOrange": "#FFB370",
+    "peach": "#F9C19A",
+    "green": "#7EC892",
+    "purple": "#D6ABEE",
+    "maroon": "#C65882",
+    "foreground": "#E3DEDF",
+    "punctuation": "#A29094",
+    "background": "#262022"
+  },
+  "syntax": {
+    "keyword": "pink",
+    "constant": "orange",
+    "parameter": "lightOrange",
+    "string": "peach",
+    "important": "green",
+    "function": "purple",
+    "comment": "maroon",
+    "punctuation": "punctuation",
+    "text": "foreground"
+  },
+  "editor": {
+    "background": "#262022",
+    "foreground": "#E3DEDF",
+    "cursor": "#F3F1F2",
+    "selection": "#42373B",
+    "lineHighlight": "#3C3336",
+    "gutter": "#927C81",
+    "added": "#3DD68A",
+    "modified": "#FDBB49",
+    "removed": "#F76E6E"
+  }
+}

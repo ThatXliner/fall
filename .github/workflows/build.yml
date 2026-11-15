@@ -1,0 +1,15 @@
+name: build
+
+on: [push, pull_request]
+jobs:
+    atom:
+        runs-on: ubuntu-latest
+        steps:
+          - name: 🏠 Checkout repo
+            uses: actions/checkout@v4
+          - name: 🟩 Set up Node
+            uses: actions/setup-node@v4
+            with:
+                node-version: 22
+          - name: 🔨 Build Atom theme
+            run: npx -y less@4.2.0 ports/atom/index.less

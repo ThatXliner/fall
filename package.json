@@ -1,0 +1,14 @@
+{
+  "name": "fall",
+  "private": true,
+  "description": "Fall, a warm, low-blue color theme, and its ports",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node ports/t3code/build.mjs",
+    "check": "node scripts/check.mjs"
+  }
+}

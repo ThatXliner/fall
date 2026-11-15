@@ -1,0 +1,32 @@
+.syntax--markup,.syntax--gfm {
+    &.syntax--code > .syntax--support {
+            color:@mono-2;
+    }
+    &.syntax--entity {color: @keyword-color;}
+    &.syntax--raw {
+        color: @string-color;
+    }
+    &.syntax--bold {
+        font-weight: bold;
+        color: @constant-color;
+    }
+    &.syntax--italic {
+        font-style: italic;
+        color: @arg-color;
+    }
+    &.syntax--heading {
+        color: @keyword-color;
+    }
+    // .syntax--punctuation {
+    //     color: inherit;
+    // }
+    &.syntax--list {
+        color: @string-color;
+    }
+}
+.syntax--mention {
+    color: @constant-color;
+}
+.synax--username {
+    color: @string-color;
+}

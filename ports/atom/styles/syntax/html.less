@@ -1,0 +1,20 @@
+.syntax--html {
+    .syntax--doctype.syntax--meta {
+        color: @function-color;
+    }
+    .syntax--entity {
+        color: @keyword-color;
+        // Special tags
+        &.syntax--meta:not(.syntax--doctype),
+        &.syntax--script,
+        &.syntax--link,
+        &.syntax--title,
+        &.syntax--style {
+            color: @constant-color;
+        }
+    }
+
+    &.syntax--attribute-name {
+            color: @arg-color;
+    }
+}

@@ -1,0 +1,31 @@
+.syntax--python {
+    &.syntax--unpacking {
+        color: @keyword-color;
+    }
+    // &.syntax--parameters {
+    //         color: @mono-1;
+    // }
+    &.syntax--console { // Python console
+        &.syntax--prompt {
+            color: @keyword-color;
+        }
+    }
+    &.syntax--decorator {
+        color: @keyword-color;
+    }
+    &.syntax--builtin,
+    &.syntax--magic {
+        color: @function-color;
+    }
+
+    // MagicPython
+    .syntax--comment {
+        .syntax--typehint.syntax--type {
+            color: @keyword-color;
+        }
+    }
+
+    // Tree sitters
+    .syntax--entity.syntax--name.syntax--function.syntax--decorator {color: @keyword-color}
+    .syntax--support.syntax--function {color: @function-color;}
+}

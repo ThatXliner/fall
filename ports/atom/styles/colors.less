@@ -1,0 +1,28 @@
+
+// Config -----------------------------------
+@syntax-hue:          346;
+@syntax-saturation:    5%;
+@syntax-brightness:   15%;
+
+// Monochrome -----------------------------------
+@mono-1: hsl(@syntax-hue, 9%, 88%); // default text #E3DEDF
+@mono-2: hsl(@syntax-hue,  9%, 60%);
+@mono-3: #C65882;  // Comments
+
+// Colors -----------------------------------
+@keyword-color:   #FF7092;   // Red
+@constant-color:  #F99270;   // Orange
+@arg-color:       #FFB370;   // Light Orange
+@string-color:    #F9C19A;   // Yellow
+@important-color: #7EC892;   // Green
+@function-color:  #D6ABEE;   // Purple
+
+
+@bg:  hsl(270, 5%, 17%);
+
+// Base colors -----------------------------------
+@syntax-fg:     @mono-1;
+@syntax-bg:     #262022;  // Background
+@syntax-gutter: darken(@syntax-fg, 35%);
+@syntax-guide:  fade(@syntax-fg, 12%);
+@syntax-accent: hsl(@syntax-hue, 6%, 95%);

@@ -1,0 +1,29 @@
+{
+    "name": "fall-syntax",
+    "theme": "syntax",
+    "version": "2.7.0",
+    "description": "A syntax theme for your eyes",
+    "keywords": [
+        "syntax",
+        "dark",
+        "aesthetic",
+        "theme",
+        "red",
+        "beautiful",
+        "one",
+        "first",
+        "fall",
+        "autumn"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ThatXliner/fall-syntax.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ThatXliner/fall-syntax/issues"
+    },
+    "license": "MIT",
+    "engines": {
+        "atom": ">0.50.0"
+    }
+}
