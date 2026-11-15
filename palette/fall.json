@@ -34,5 +34,23 @@
     "added": "#3DD68A",
     "modified": "#FDBB49",
     "removed": "#F76E6E"
+  },
+  "terminal": {
+    "black": "#3C3336",
+    "red": "#F76E6E",
+    "green": "#7EC892",
+    "yellow": "#FDBB49",
+    "blue": "#D6ABEE",
+    "magenta": "#CF809E",
+    "cyan": "#8CCFBB",
+    "white": "#E3DEDF",
+    "brightBlack": "#A29094",
+    "brightRed": "#F99A9A",
+    "brightGreen": "#A5D9B3",
+    "brightYellow": "#FECF80",
+    "brightBlue": "#E2C4F3",
+    "brightMagenta": "#DDA6BB",
+    "brightCyan": "#AFDDCF",
+    "brightWhite": "#F3F1F2"
   }
 }

@@ -2,8 +2,11 @@ import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 
 import { contrast, loadPalette } from "../lib/palette.mjs";
+import { GENERATED_PORTS } from "./build.mjs";
 
 const TARGET_RATIO = 6;
+// Terminal text colors meet WCAG AA. `black` is a background shade, so it is exempt.
+const TERMINAL_RATIO = 4.5;
 const CONTRAST_CHECKED = ["keyword", "constant", "parameter", "string", "important", "function"];
 // Variable names in ports/atom/styles/colors.less, by palette swatch.
 const ATOM_COLORS = {
@@ -16,15 +19,21 @@ const ATOM_COLORS = {
   maroon: "mono-3",
   background: "syntax-bg",
 };
-const GENERATED_PORTS = ["ports/t3code/build.mjs"];
 
-const { swatches, syntax, editor } = loadPalette();
+const { swatches, syntax, editor, terminal } = loadPalette();
 const failures = [];
 
 for (const role of CONTRAST_CHECKED) {
   const ratio = contrast(syntax[role], editor.background);
   if (ratio < TARGET_RATIO) {
     failures.push(`syntax.${role} ${syntax[role]} has contrast ${ratio.toFixed(2)}, below ${TARGET_RATIO}`);
+  }
+}
+
+for (const [name, hex] of Object.entries(terminal)) {
+  const ratio = contrast(hex, editor.background);
+  if (name !== "black" && ratio < TERMINAL_RATIO) {
+    failures.push(`terminal.${name} ${hex} has contrast ${ratio.toFixed(2)}, below ${TERMINAL_RATIO}`);
   }
 }
 
