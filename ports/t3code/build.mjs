@@ -78,8 +78,10 @@ const colors = {
   terminalScrollbarHover: mix(bg, fg, 0.2),
 };
 
-// T3 Code highlights chat code with the fixed pierre-dark Shiki theme, which writes each token's
-// color inline. Key: pierre-dark's color. Value: the Fall syntax role for the scopes it colors.
+// T3 Code highlights chat code with its Highlights lexers and the fixed pierre-dark palette, and
+// writes each token's color inline. Key: pierre-dark's color. Value: the Fall syntax role for the
+// tokens it colors. Spans carry nothing but the color, so Fall's green definition keywords cannot
+// be told apart from other keywords here.
 const PIERRE_DARK_TOKENS = {
   "#FF678D": "keyword", // keyword, storage
   "#FF855E": "keyword", // entity.name.tag (Fall colors tags like keywords)

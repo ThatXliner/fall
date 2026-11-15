@@ -39,7 +39,7 @@ Paste this into a T3 Code thread running in Full access:
 - Fall is dark only, so Appearance offers it for dark mode. Choose another theme for light mode.
 - Fall avoids blue, so the spots T3 Code colors blue by default (focus rings, update badges) use pink and purple instead.
 - The diff panel and file previews draw code where theme CSS can't reach, so code there keeps T3 Code's default syntax colors.
-- T3 Code's default code theme gives class keywords and class names one color, so both appear purple. The Atom theme shows the keyword in green.
+- Definition keywords (`def`, `class`, `function`, `fn`) are pink like every other keyword, not green as in the Atom theme. The name after them is still purple. T3 Code gives themes only each token's color, which is the same for `class` and `return`, so a theme cannot single out definitions.
 
 ## How it works
 
@@ -51,4 +51,4 @@ npm run build
 
 `build.mjs` maps each of T3 Code's 61 color roles to a Fall color from [`palette/fall.json`](../../palette/fall.json).
 
-T3 Code highlights code with a fixed Shiki theme, `pierre-dark`, and has no color roles for syntax tokens. The theme's custom CSS maps each `pierre-dark` token color to the Fall color for the same scopes, and makes comments italic as in the Atom theme. If T3 Code changes its code theme, update `PIERRE_DARK_TOKENS` in `build.mjs` and rebuild.
+T3 Code highlights code with its own lexers and a fixed palette, `pierre-dark`, and has no color roles for syntax tokens. The theme's custom CSS maps each `pierre-dark` token color to the Fall color for the same kind of token, and makes comments italic as in the Atom theme. If T3 Code changes its code theme, update `PIERRE_DARK_TOKENS` in `build.mjs` and rebuild.
