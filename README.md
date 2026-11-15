@@ -10,7 +10,32 @@ Fall is a warm, dark color theme with three goals:
 
 <sub>\*Not clinically proven. Coding breaks are still recommended.</sub>
 
-This repository holds the Fall palette and every port of it.
+---
+
+![A screenshot of Fall](./ports/atom/screenshot.png)
+
+---
+
+I set out to build a theme on top of those principles: something that minimizes the blue but still looks good. Why? [Blue light causes eyestrain and headaches](https://www.foreyes.com/blog/10-ways-how-blue-light-can-affect-you), which are a nuisance for the programmer (and the average computer user).
+
+After about a month of color-picking, discussion, and color-tweaking, *Fall* was here. Every hue, every shade, was **meticulously hand-picked**, tested, and **checked against standards** such as the [WCAG 2.0 contrast ratio criterion](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html). That check still runs on every commit.
+
+Naturally, the colors are reddish and aesthetic, giving that **post-summer vibe**. 🍂
+
+Besides warm colors, *Fall* features some nice **perks** such as
+
+- Trivial parts of code (like comments and bracket pairs) are **faded**
+- Consistent color semantics across languages (e.g. definitions of classes or functions are a green keyword followed by a purple name)
+- **Increased contrast** on function/class definitions\*
+- **No blue anywhere**, even where apps default to it (focus rings, update badges)
+
+Enjoy!
+
+<sub>\*Support may vary by language and port.</sub>
+
+Fall started life as an Atom syntax theme ([`fall-syntax`](https://github.com/ThatXliner/fall-syntax)), originally forked from [Atomic-monokai-pro-syntax][monokai-pro-syntax]. Except now, it looks *nothing* like it. This repository holds the Fall palette and every port of it, so Fall can follow you to more places.
+
+If you like it ❤️, **please star this repo**. That way, other people can find it too.
 
 ## Ports
 
@@ -64,6 +89,34 @@ npm run check   # contrast, palette drift, and stale-output checks
 2. Add the script to `build` in `package.json` and to `GENERATED_PORTS` in `scripts/check.mjs`.
 3. Commit the generated output so users can install it without building.
 
+## FAQ
+
+**I need this for another app.**
+
+Check the [ports](#ports) above. If yours isn't there, **help port it!** See [Adding a port](#adding-a-port), and send a pull request.
+
+**This looks like (insert some theme name).**
+
+Welp. Great minds think alike!
+
+**It's too reddish!**
+
+Fair. I *highly recommend* @tterb's [Atomic-monokai-pro-syntax][monokai-pro-syntax] or @jackw01's [summer-night-syntax](https://github.com/jackw01/summer-night-syntax). [Nord](https://www.nordtheme.com/) is pretty good, too.
+
+**How can I contribute?**
+
+Either ~~complain about the colors~~ professionally critique the theme in the issues, or send a pull request with different colors or a new port. I'll merge it if I like it!
+
+## Credits
+
+- My ***epic*** friends [@KomodoKode](https://github.com/KomodoKode) and [@thatdevboyjun](https://github.com/thatdevboyjun) for feedback, suggestions, and critique!
+- @tterb for the *amazing* [Atomic-monokai-pro-syntax][monokai-pro-syntax]
+- The [City Lights theme](http://citylights.xyz/) for major inspiration
+- Wimer Hazenberg and his [Monokai Pro theme](https://monokai.pro/), which heavily influenced the design. You can still see traces of Monokai hidden in the theme
+- [Coolors.co](https://coolors.co/) for the *epic* palette generator (and color editor)
+
 ## License
 
 MIT. See [LICENSE.md](./LICENSE.md).
+
+[monokai-pro-syntax]: https://github.com/tterb/Atomic-Monokai-Pro-syntax
