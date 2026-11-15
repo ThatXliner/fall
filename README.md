@@ -43,10 +43,12 @@ If you like it ❤️, **please star this repo**. That way, other people can fin
 | --- | --- | --- |
 | [Atom / Pulsar](./ports/atom) | `ports/atom` | Published as [`fall-syntax`](https://web.pulsar-edit.dev/packages/fall-syntax) |
 | [T3 Code](./ports/t3code) | `ports/t3code` | Generated from the palette |
+| [VS Code](./ports/vscode) | `ports/vscode` | Generated from the palette. Not on the Marketplace yet |
+| [Ghostty](./ports/ghostty) | `ports/ghostty` | Generated from the palette |
+| [iTerm2](./ports/iterm2) | `ports/iterm2` | Generated from the palette |
 
 Third-party ports:
 
-- [Fall Syntax for VS Code](https://github.com/ThatXliner/fall-syntax-vscode) (unfinished)
 - [Fall Syntax for Sublime Text](https://github.com/imnotril/fall-syntax-sublime-text)
 
 ## Palette
@@ -66,7 +68,7 @@ Third-party ports:
 | Punctuation | ![](https://readme-swatches.vercel.app/A29094) | `#A29094` | Brackets, separators |
 | Background | ![](https://readme-swatches.vercel.app/262022) | `#262022` | Background |
 
-The palette's `syntax` section names the swatch for each role, and its `editor` section holds the derived UI colors (cursor, selection, gutter, diff colors).
+The palette's `syntax` section names the swatch for each role, its `editor` section holds the derived UI colors (cursor, selection, gutter, diff colors), and its `terminal` section holds the 16 ANSI colors. Fall has no blue, so the terminal's blue is Fall's purple.
 
 ## Development
 
@@ -80,14 +82,14 @@ npm run check   # contrast, palette drift, and stale-output checks
 `npm run check` fails when:
 
 - a syntax color has a contrast ratio below 6:1 on the background,
+- a terminal color other than black is below 4.5:1,
 - `ports/atom/styles/colors.less` disagrees with the palette, or
 - a generated port is out of date.
 
 ### Adding a port
 
-1. Create `ports/<name>/build.mjs`. Read colors with `loadPalette()` from `lib/palette.mjs`, and write output with `emit()` so `--check` works.
-2. Add the script to `build` in `package.json` and to `GENERATED_PORTS` in `scripts/check.mjs`.
-3. Commit the generated output so users can install it without building.
+1. Create `ports/<name>/build.mjs`. Read colors with `loadPalette()` from `lib/palette.mjs`, and write output with `emit()` so `--check` works. `npm run build` and `npm run check` find it automatically.
+2. Commit the generated output so users can install it without building.
 
 ## FAQ
 

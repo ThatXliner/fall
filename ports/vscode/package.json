@@ -1,0 +1,43 @@
+{
+  "name": "fall-theme",
+  "displayName": "Fall",
+  "description": "A warm, low-blue dark theme for your eyes",
+  "version": "1.0.0",
+  "publisher": "ThatXliner",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThatXliner/fall.git",
+    "directory": "ports/vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/ThatXliner/fall/issues"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "warm",
+    "autumn",
+    "fall",
+    "low blue light"
+  ],
+  "galleryBanner": {
+    "color": "#262022",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Fall",
+        "uiTheme": "vs-dark",
+        "path": "./themes/fall-color-theme.json"
+      }
+    ]
+  }
+}
