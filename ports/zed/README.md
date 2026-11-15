@@ -2,6 +2,8 @@
 
 A warm, low-blue dark theme for [Zed](https://zed.dev). 🍂
 
+![Python in Zed with Fall](previews/editor.png)
+
 The editor, the panels, and the terminal take on Fall's colors. Comments and brackets are faded, names you define are purple, and the terminal's ANSI palette has no true blue.
 
 ## Install
