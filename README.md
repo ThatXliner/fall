@@ -46,6 +46,7 @@ If you like it ❤️, **please star this repo**. That way, other people can fin
 | [VS Code](./ports/vscode) | `ports/vscode` | Generated from the palette. Not on the Marketplace yet |
 | [Ghostty](./ports/ghostty) | `ports/ghostty` | Generated from the palette |
 | [iTerm2](./ports/iterm2) | `ports/iterm2` | Generated from the palette |
+| [Zed](./ports/zed) | `ports/zed` | Generated from the palette |
 
 Third-party ports:
 
